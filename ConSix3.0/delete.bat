@@ -1,0 +1,1 @@
+rd SearchRecord /s /q

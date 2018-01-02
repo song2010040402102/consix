@@ -1,0 +1,169 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG 0, 0, 187, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDB_OK,16,78,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,78,50,14
+    CTEXT           "程序：沈航连六",IDC_STATIC,34,15,119,22,SS_CENTERIMAGE
+    CTEXT           "时间：2013年06月07日",IDC_STATIC,34,48,119,21,SS_CENTERIMAGE
+END
+
+IDD_GAME_NEW DIALOG 0, 0, 123, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建游戏"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "开始游戏",IDOK,19,80,84,18
+    GROUPBOX        "黑方",IDC_STATIC,19,3,84,21,BS_CENTER
+    CONTROL         "电脑",IDR_BLC_COM,"Button",BS_AUTORADIOBUTTON,29,12,32,9
+    CONTROL         "人",IDR_BLC_PER,"Button",BS_AUTORADIOBUTTON,71,12,23,9
+    GROUPBOX        "白方",IDC_STATIC,19,32,84,21,BS_CENTER
+    CONTROL         "电脑",IDR_WHT_COM,"Button",BS_AUTORADIOBUTTON,29,40,32,9
+    CONTROL         "人",IDR_WHT_PER,"Button",BS_AUTORADIOBUTTON,71,40,23,9
+    LTEXT           "搜索深度：",IDC_STATIC,19,61,36,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_DEPTH,57,61,46,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_GAME_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU
+BEGIN
+    POPUP "游戏"
+    BEGIN
+        MENUITEM "新建",                          IDM_GAME_NEW
+        MENUITEM "退出",                          IDM_EXIT
+    END
+    POPUP "选项"
+    BEGIN
+        MENUITEM "输出所有线信息",                     IDM_OUTPUT_ALL_LINE
+        MENUITEM "生成搜索记录",                      IDM_CREATE_SEARCH_RECORD
+    END
+    POPUP "棋谱"
+    BEGIN
+        MENUITEM "棋谱工具",                        IDM_CM_TOOL
+        POPUP "读取棋谱"
+        BEGIN
+            MENUITEM "仅显示棋谱",                       IDM_CM_READ
+            MENUITEM "同时启动引擎",                      IDM_AND_START_ENGINE
+        END
+        MENUITEM "保存棋谱",                        IDM_CM_SAVE
+    END
+    POPUP "调试"
+    BEGIN
+        MENUITEM "计算步的HashID",                  IDM_HASHID
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "使用说明",                        IDM_INSTRUCTION
+        MENUITEM "关于",                          IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CONSIX              ICON                    "ICON\\ConSix.ico"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
